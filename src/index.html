@@ -9,14 +9,15 @@
   <body>
     <div id="app">
       <header>
-        <form id="search-form">
+        <form id="search-form" class="form">
           <input
             type="text"
             id="search-input"
             placeholder="Search for images..."
             required
+            class="input-form"
           />
-          <button type="submit">Search</button>
+          <button type="submit" class="btn">Search</button>
         </form>
       </header>
       <main>
@@ -24,8 +25,8 @@
         <ul id="gallery" class="gallery"></ul>
       </main>
     </div>
-    <script type="module" src="./js/pixabay-api.js"></script>
-    <script type="module" src="./js/render-function.js"></script>
+    <!-- <script type="module" src="./js/pixabay-api.js"></script>
+    <script type="module" src="./js/render-function.js"></script> -->
     <script type="module" src="./main.js"></script>
   </body>
 </html>

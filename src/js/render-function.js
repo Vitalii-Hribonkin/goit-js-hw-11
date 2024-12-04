@@ -12,15 +12,15 @@ export const createGalleryMarkup = (images) => {
   return images
     .map(
       (img) => `
-    <li>
+    <li class="li">
       <a href="${img.largeImageURL}">
         <img src="${img.webformatURL}" alt="${img.tags}" />
       </a>
-      <div>
-        <p>Likes: ${img.likes}</p>
-        <p>Views: ${img.views}</p>
-        <p>Comments: ${img.comments}</p>
-        <p>Downloads: ${img.downloads}</p>
+      <div class="div">
+        <p class="p">Likes: ${img.likes}</p>
+        <p class="p">Views: ${img.views}</p>
+        <p class="p">Comments: ${img.comments}</p>
+        <p class="p">Downloads: ${img.downloads}</p>
       </div>
     </li>
   `
